@@ -1,3 +1,5 @@
 AGILE PhD School
 
-TARTU, Estonia
+TARTU, Estonia#
+
+We love git
