@@ -1,0 +1,92 @@
+---
+title: "AGILE PhD School working notes"
+author: "Jennie Gray"
+date: "27/11/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Predictive Geodemographics
+
+
+
+
+
+$$ Geodemographic Change = ∑Neighbourhood Processes$$
+
+- gentrification and displacement
+- urban decay
+- suburbanisation and counter-urbanisation 
+
+
+Geodemographic classifications are temporally static, but geodemographics are area-based classifications, and areas are dynamic. It then makes sense to use multitemporal data related to these dynamic neighbourhood processes. 
+
+#### Comparison of Methods
+-Gradient Boosting Machine
+-Change Vector Analysis (CVA)
+
+Current geodemographic classifications have many spatial and temporal limitations, such that they become anochronistic; while seemingly present they represent snapshots of the past (Longley, 2012). This is because geomdeographic classifications are often built with static data sources, namely the census (Levelthal, 2013), leading to the anochronism of the classification by lengthening the lag between the data, classification, and its dissemination. Furthermore, these classifications provide static representations of a dynamic, continually changing world (Reibel, 2011; Martin et al,. 2010). 
+*Therefore*, data at a higher spatiotemporal resolution can lead to more insight and a better understanding of aggregate patterns (Miller, 2004; Adnan et al., 2010), and arguably, it is the transition of the neighbourhood between geodemographic clusters, and not the state of a neighbourhood's cluster assignment at particular points in time, is important, and the data should reflect that. 
+
+### Neighbourhood Processes
+ADD TEXT HERE
+
+- why are they important
+- what will they add to the field 
+
+### Data 
+
+
+```{r echo=FALSE, include=FALSE}
+library(knitr)
+```
+
+``` {r echo = FALSE}
+DataSource <- c("ONS", "CDRC", "Dft/DVLA", "ONS")
+Data <- c("DWP Benefits Data (Job Seekers Allowance, Income Support, Pension Credits)", "Average House Price", "TOAC", "Number of Cars")
+Tab <- data.frame(Data, DataSource)
+kable(Tab, caption = "Current Data Sets and their Sources")
+
+```
+
+
+
+### Methods
+
+#### Gradient Boosting Model and Random Forest
+ADD TEXT HERE
+
+- Short description of methods
+
+
+
+
+#### Change Vector Analysis (CVA)
+CVA is a method developed and used in remote sensing mainly for the change detection of land use land cover change.
+
+
+$$ Write the CVA Equation 1 and 2 here $$ 
+
+
+
+ADD CODE PIECES
+
+
+
+ADD RESULTS
+
+
+
+### How the AGILE PhD School will impact my project
+
+1 Change Version Control in Git/GitHub to properly document the process of my research,
+
+2 Help me to generate papers that are reproducible, developing my reputation as an academic,
+
+3 ...
+
+
+-  
