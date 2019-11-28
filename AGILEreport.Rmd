@@ -121,7 +121,7 @@ Version control **is** my **friend**
 3. R? cmd? ✓
 4. Online collaborators? ✓ 
 
-
+5. I have largely been using open data, and use R (with bits of ArcGIS), so these (minus Arc) lend themselves well to reproducibility. But I've learnt how to use QGIS too! 
 
 ### Science Communication 
 
