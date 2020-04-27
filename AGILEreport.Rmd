@@ -1,16 +1,18 @@
 ---
-title: "AGILE Report"
-author: "Jennie Gray"
-date: "28/11/2019"
-output: html_document
+title: "Predictive Geodemographics"
+author:
+  - name: Jennie Gray
+    affiliation: University of Leeds, UK
+    email: gyjhg@leeds.ac.uk
+    orcid: 0000-0000-0000-0000
+abstract: |
+   Geodemographic classifications are temporally static, but geodemographics are area-based classifications, and areas are *dynamic*.
+output:
+  ceurticles::twocolpceurws_article
+bibliography: samplebib.bib
 ---
 
-## Predictive Geodemographics ##
-
-
-&nbsp;
-
-Geodemographic classifications are temporally static, but geodemographics are area-based classifications, and areas are *dynamic*. 
+## Geodemographic classifications are temporally static, but geodemographics are area-based classifications, and areas are *dynamic*. 
 
 &nbsp;
 
