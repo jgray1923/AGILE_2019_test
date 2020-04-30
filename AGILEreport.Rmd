@@ -1,82 +1,63 @@
 ---
-title: "AGILE Report"
-author: "Jennie Gray"
-date: "28/11/2019"
-output: html_document
+title: "Predictive Geodemographics"
+author:
+  - name: Jennie Gray
+    affiliation: University of Leeds, UK
+    email: gyjhg@leeds.ac.uk
+    orcid: 0000-0000-0000-0000
+abstract: |
+   Geodemographic classifications are temporally static, but geodemographics are area-based classifications, and areas are *dynamic*.
+output:
+  ceurticles::twocolpceurws_article:
+     latex_engine: xelatex
+bibliography: samplebib.bib
 ---
 
-## Predictive Geodemographics ##
-
-
-&nbsp;
+# Geodemographic classifications 
 
 Geodemographic classifications are temporally static, but geodemographics are area-based classifications, and areas are *dynamic*. 
 
-&nbsp;
-
 $$ Geodemographic Change = ∑Sociodemographic Processes$$
 
-
-
 - gentrification and displacement
-- urban decay
-- suburbanisation and counter-urbanisation 
 
+- urban decay
+
+- suburbanisation and counter-urbanisation 
 
 Use multitemporal open data as proxies for attributes to sociodemographic processes (gentrification and displacement) to predict geodemographic change pairs. 
 
-
-
-&nbsp;
-
-
-![](method.png)
-
-
-
-&nbsp;
-
-
-
-
-<img src="ChangePairs.png" width="600">
-
-
-
-#### Comparison of Methods
-- Gradient Boosting Machine 
-- Multitemporal feature selecred variables - 51% accurate
-- Change Vector Analysis (CVA) - 48% accurate **BUT** greater speficity of dynamic geodemographic change
-
-
-
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, echo = FALSE, out.width="100%", fig.cap="Method"}
+knitr::include_graphics('method.png')
 ```
 
+```{r, echo = FALSE, out.width="100%", fig.cap="Change pairs"}
+knitr::include_graphics('ChangePairs.png')
+```
 
-&nbsp;
+## Comparison of Methods
 
+- Gradient Boosting Machine
 
-### Visualisation
+- Multitemporal feature selecred variables - 51% accurate
 
+- Change Vector Analysis (CVA) - 48% accurate **BUT** greater speficity of dynamic geodemographic change
 
+# Visualisation
 
 Introduced to new software - QGIS - to develop data visualisation skills, specifically for spatiotemporal data (with TimeManager plugin).  
 
-
-&nbsp;
-
 Mapping <span style="color:gold"> **_golden rules_** </span>
 
+```{r, echo = FALSE, out.width="100%", fig.cap="AngleTime"}
+knitr::include_graphics('AngleTime.jpg')
+```
+
+```{r, echo = FALSE, out.width="100%", fig.cap="MagTime"}
+knitr::include_graphics('MagTime.jpg')
+```
+
 1. Black Background! 
-
-<img src="AngleTime.jpg" width="400">
-<img src="MagTime.jpg" width="400">
-
-
-&nbsp;
 
 2. Fancy Font?
 
@@ -86,63 +67,50 @@ Mapping <span style="color:gold"> **_golden rules_** </span>
 
 5. QGIS TimeManager - perfect for quick, easy, effective GIFs, but also for the initial exploration and the visualisation of spatiotemporal data
 
-- Can I see any patterns?
-- Are they what I expected?
+    - Can I see any patterns?
 
-6. Although I am working with spatiotemoral data, I may not always be able to display my outputs in the most appropriate manner (GIFs?!), but static maps can still be effective when using appropriate colours and blending 
+    - Are they what I expected?
 
+6. Although I am working with spatiotemoral data, I may not always be able to display my outputs in the most appropriate manner (GIFs?!), but static maps can still be effective when using appropriate colours and blending
 
-&nbsp;
-
-
-
-
-### Reproducibility
-
-
+# Reproducibility
 
 How to better improve the reproducibility of your work via version control (Git)
-
-&nbsp;
-
 
 My current folder organisation:
 
 1. Logical? X
-2. Easy to navigate? X
-3. A million seperate folders and document revisions? ✓ 
 
+2. Easy to navigate? X
+
+3. A million seperate folders and document revisions? ✓ 
 
 Version control **is** my **friend**
 
-
 1. Need to rerun a specific analysis? ✓ 
+
 2. Reproducible papers? ✓
+
 3. R? cmd? ✓
+
 4. Online collaborators? ✓ 
 
 5. I have largely been using open data, and use R (with bits of ArcGIS), so these (minus Arc) lend themselves well to reproducibility. But I've learnt how to use QGIS too! 
 
-### Science Communication 
-
+# Science Communication 
 
 How to improve our communication (writing and presenting) through a series of small exercises to improve our writing process. 
 
-&nbsp;
-
 The purpose of scientific writing is to fill a gap in knowledge, and to tell and sell that knowledge with and the scientific community. 
-
-&nbsp;
 
 _Brown's 8 Questions_
 
 Focus Focus Focus! 
 
-- Identify appropriate audience 
-- Defining the purpose 
-- Creating a story 
+- Identify appropriate audience
 
+- Defining the purpose
 
+- Creating a story
 
 I had the most productive writing session in that hour and half than I have in the past two months! 
-
